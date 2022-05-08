@@ -1,0 +1,50 @@
+/*IMPORT FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/*IMPORT RESET STYLES*/
+@import url('./reset.scss');
+
+/*GLOBAL STYLES*/
+:root {
+    --dark: #0E0E0E;
+    --black: #000;
+    --light: #f8f9fa;
+    --main-color: #FBEC40;
+}
+.fw-400 {font-weight: 400;}
+.fw-500 {font-weight: 500;}
+.fw-600 {font-weight: 600;}
+.fw-700 {font-weight: 700;}
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-dark {
+    background-color: var(--dark);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-main {
+    background-color: var(--main-color);
+}
+
+.color-light {
+    color: var(--light);
+}
+
+.container {
+    margin: auto;
+    width: 1320px;
+    @media (max-width: 1320px) {
+        width: 100%;
+    }
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 1000px;
+}

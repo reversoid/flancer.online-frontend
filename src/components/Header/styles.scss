@@ -1,0 +1,42 @@
+.header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    .logo {
+        .logo__img {
+            height: 100%;
+        }
+    }
+
+    .menu {
+        display: flex;
+
+        .role {
+            display: flex;
+            align-items: center;
+            .role__text {
+                margin-right: 0.875rem;
+            }
+            .role__toggler {
+                margin-right: 1.75rem;
+            }
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+
+            .profile__image {
+                height: 40px;
+                width: 40px;
+                margin-right: 1rem;
+                background-size: contain;
+                background-image: url("./img/profile-img.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
