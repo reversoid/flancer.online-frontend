@@ -36,6 +36,10 @@ html, body {
     color: var(--light);
 }
 
+.color-dark {
+    color: var(--dark);
+}
+
 .container {
     margin: auto;
     width: 1320px;
@@ -47,6 +51,7 @@ html, body {
 .btn {
     padding: 1rem 2rem;
     border-radius: 1000px;
+    text-align: center;
 
     &:focus {
         box-shadow: 0 0 5px var(--main-color);
