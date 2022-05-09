@@ -5,9 +5,8 @@
     height: 3rem;
     border-radius: 19px;
     font-weight: 600;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    padding-left: 2.5rem;
+
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
     background-size: 1.2rem;
     background-image: url('./img/search-svgrepo-com\ 1.svg');
     background-repeat: no-repeat;
@@ -15,5 +14,9 @@
     background-position-x: 0.835rem;
     ::placeholder {
         color: #515151;
+    }
+    &:focus {
+        box-shadow: 0 0 5px var(--main-color);
+        transition: ease-in-out .2s;
     }
 }

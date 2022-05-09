@@ -47,4 +47,9 @@ html, body {
 .btn {
     padding: 1rem 2rem;
     border-radius: 1000px;
+
+    &:focus {
+        box-shadow: 0 0 5px var(--main-color);
+        transition: ease-in-out .2s;
+    }
 }
