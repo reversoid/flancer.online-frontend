@@ -3,7 +3,7 @@ import Navbar from 'components/Navbar/Navbar';
 import OrdersPage from 'pages/OrdersPage/OrdersPage';
 
 import 'styles/styles.scss'
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import MessagesPage from 'pages/MessagesPage/MessagesPage';
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
       <Routes>
         <Route path='orders' element={<OrdersPage />} />
         <Route path='messages' element={<MessagesPage />} />
+        <Route path='*' element={<Navigate to="/orders"/>} />
       </Routes>
 
     </div>

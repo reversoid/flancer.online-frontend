@@ -24,5 +24,6 @@ export function useSearchLayout():string {
         return 'Поиск по заказам';
     else if (path === '/messages')
         return 'Поиск по сообщениям';
-    throw new Error('The value given does not math any routes ("/orders", "/messages"');
+    return ''
+    // throw new Error('The value given does not math any routes ("/orders", "/messages"');
 }
