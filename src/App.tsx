@@ -5,6 +5,7 @@ import OrdersPage from 'pages/OrdersPage/OrdersPage';
 import 'styles/styles.scss'
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import MessagesPage from 'pages/MessagesPage/MessagesPage';
+import ProfilePage from 'pages/ProfilePage/ProfilePage';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
       <Routes>
         <Route path='orders' element={<OrdersPage />} />
         <Route path='messages' element={<MessagesPage />} />
+        <Route path='profile' element={<ProfilePage />} />
+
         <Route path='*' element={<Navigate to="/orders"/>} />
       </Routes>
 
