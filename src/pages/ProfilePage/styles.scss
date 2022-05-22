@@ -1,0 +1,57 @@
+.profile {
+    .profile__header {
+        margin-top: 2rem;
+        display: flex;
+
+        .profile__image {
+            width: 15rem;
+            height: 15rem;
+            background-image: url('./img/profile-img.svg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            flex-shrink: 0;
+            margin-right: 4rem;
+        }
+        .profile__info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-grow: 1;
+
+            .profile__name {
+                font-size: 2.5rem;
+            }
+            .profile__description {
+                font-size: 1rem;
+                margin-top: 1.4rem;
+            }
+            .profile__stats {
+                font-size: 1.333rem;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+            }
+        }
+    }
+    .projects {
+        .projects__title {
+            font-size: 2rem;
+            margin-top: 4rem;
+            margin-bottom: 2.666rem;
+        }
+        .projects__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 3.4rem;
+            row-gap: 3.4rem;
+
+            .project {
+                background-color: #000;
+                border: 1px solid white;
+                // width: 23rem;
+                height: 14rem;
+            }
+        }
+    }
+}
