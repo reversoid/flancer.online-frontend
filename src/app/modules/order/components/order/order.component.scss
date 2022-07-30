@@ -1,0 +1,85 @@
+@import '/src/styles/colors';
+
+.order {
+  display: none;
+  background-color: $lightgray;
+  border-radius: 2rem 4.5rem 2rem 2rem;
+  padding: 1.6rem 2.5rem;
+  padding-bottom: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  &.outlined {
+    border: 2px solid transparent;
+    background: linear-gradient($lightgray 0 0) padding-box, linear-gradient(20deg, $main-color, $lightgray) border-box;  
+  }
+
+  .order__data {
+    flex-basis: 70%;
+    .order__title {
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .order__description {
+      font-weight: 500;
+    }
+
+    .order__date {
+      margin-top: 2rem;
+      font-weight: 600;
+      font-size: 1.25rem;
+      display: flex;
+
+      .order__date-img {
+        background-image: url("./assets/calendar.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-right: 0.625rem;
+      }
+    }
+  }
+
+  .order__info {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .order__created-at {
+      font-size: 1rem;
+      display: flex;
+      font-weight: 500;
+
+      .order__created-at-img {
+        background-image: url("./assets/time.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.625rem;
+      }
+    }
+
+    .order__price {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+
+  .order__tags {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: 0 - 1.1rem;
+
+    :not(:last-child) {
+      margin-right: 0.8rem;
+    }
+  }
+}
