@@ -6,6 +6,7 @@ import { OrdersPageComponent } from './pages/orders-page/orders-page.component';
 import { SingleOrderPageComponent } from './pages/single-order-page/single-order-page.component';
 import { OrderComponent } from './components/order/order.component';
 import { TagComponent } from './components/tag/tag.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { TagComponent } from './components/tag/tag.component';
     SingleOrderPageComponent,
     OrderComponent,
     TagComponent,
+    NavbarComponent,
   ],
   imports: [
     CommonModule,

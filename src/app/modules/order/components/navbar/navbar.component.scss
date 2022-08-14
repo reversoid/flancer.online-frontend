@@ -1,0 +1,23 @@
+.navbar {
+  padding: 2rem 1rem;
+  position: relative;
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+
+    :not(:last-child) {
+      margin-right: 1rem;
+    }
+    .tabs__tab {
+      min-width: 8.125rem;
+    }
+  }
+
+  .navbar__search {
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
