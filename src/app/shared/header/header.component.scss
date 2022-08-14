@@ -1,0 +1,30 @@
+.header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    .logo__img {
+      height: 100%;
+    }
+  }
+
+  .menu {
+    display: flex;
+
+    .profile {
+      display: flex;
+      align-items: center;
+
+      .profile__image {
+        height: 40px;
+        width: 40px;
+        margin-right: 1rem;
+        background-size: contain;
+        background-image: url("../../../assets/header/profile.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
