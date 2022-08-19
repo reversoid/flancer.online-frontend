@@ -1,7 +1,11 @@
 <nav class="navbar container">
   <div class="tabs fw-700">
-    <a routerLink="/orders" class="tabs__tab btn bg-main color-dark">Заказы</a>
-    <a routerLink="/messages" class="tabs__tab btn bg-black color-light">Сообщения</a>
+    <a routerLink="/orders"
+      [ngClass]="buttonStyles.orders"
+      >Заказы</a>
+    <a routerLink="/messages"
+      [ngClass]="buttonStyles.messages"
+      >Сообщения</a>
   </div>
   <div class="navbar__search">
     <!-- <Search placeholder={useSearchLayout()}/> -->
