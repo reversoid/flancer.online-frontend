@@ -1,5 +1,8 @@
 @import '/src/styles/colors'; 
 .tag {
+    font-size: 0.9375rem;
+    cursor: default;
+    color: $lightgray;
     padding: 0.6rem 1rem;
     border-radius: 1000px;
     font-weight: 500;
