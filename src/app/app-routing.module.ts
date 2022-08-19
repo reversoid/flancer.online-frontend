@@ -4,17 +4,17 @@ import { NotFoundPageComponent } from './shared/not-found-page/not-found-page.co
 
 const routes: Routes = [
   {
-    path: 'orders',
-    loadChildren: () => import('./modules/order/order.module').then(m => m.OrderModule),
-  },
-  {
     path: 'profile',
     loadChildren: () => import('./modules/profile/profile.module').then(m => m.ProfileModule),
   },
   {
     path: '**',
-    component: NotFoundPageComponent,
+    loadChildren: () => import('./modules/userflow/userflow.module').then(m => m.UserflowModule),
   },
+  // {
+  //   path: '**',
+  //   component: NotFoundPageComponent,
+  // },
 ];
 
 @NgModule({
