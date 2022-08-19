@@ -8,13 +8,13 @@ const routes: Routes = [
     loadChildren: () => import('./modules/profile/profile.module').then(m => m.ProfileModule),
   },
   {
-    path: '**',
+    path: '',
     loadChildren: () => import('./modules/userflow/userflow.module').then(m => m.UserflowModule),
   },
-  // {
-  //   path: '**',
-  //   component: NotFoundPageComponent,
-  // },
+  {
+    path: '**',
+    component: NotFoundPageComponent,
+  },
 ];
 
 @NgModule({

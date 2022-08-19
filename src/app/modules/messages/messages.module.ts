@@ -8,7 +8,7 @@ import { MessagesRoutingModule } from './messages-routing.module';
   declarations: [],
   imports: [
     CommonModule,
-    MessagesRoutingModule
-  ]
+    MessagesRoutingModule,
+  ],
 })
 export class MessagesModule { }
