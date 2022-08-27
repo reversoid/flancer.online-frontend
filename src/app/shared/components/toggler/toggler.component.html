@@ -1,6 +1,7 @@
 <label class="switch">
     <input type="checkbox"
-        defaultChecked
+        [checked]="checked"
+        (change)="change($event.target!)"
     />
     <span class="slider round"></span>
 </label>

@@ -1,6 +1,6 @@
 <div class="role">
-    <span class="role__text">Вы кто-то</span>
+    <span class="role__text">Вы {{roleName | async}}</span>
     <div class="role__toggler">
-        <app-toggler></app-toggler>
+        <app-toggler (toggleChange)="changeRole($event)" [checked]="(isChecked | async)!"></app-toggler>
     </div>
 </div>

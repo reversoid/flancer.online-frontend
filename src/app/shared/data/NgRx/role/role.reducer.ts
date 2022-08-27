@@ -6,12 +6,17 @@ export const enum IRole {
   client,
 }
 
-const initalState = IRole.performer;
+export interface RoleState {
+  role: IRole;
+}
+
+const initalState: RoleState = {
+  role: IRole.performer,
+};
 
 export const roleReducer = createReducer(
   initalState,
-  on(switchRole, function (state) {
-    if (state === IRole.client) return IRole.performer;
-    return IRole.client;
+  on(switchRole, function (state, { to }) {
+    return { ...state, role: to };
   }),
 );
