@@ -1,4 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
+import { getDateString } from './getDateString';
 
 @Pipe({
   name: 'createdAt',
@@ -19,14 +20,7 @@ export class CreatedAtPipe implements PipeTransform {
     if (this._lessThan(difference, 4, 'day'))
       return this._getTimeAgo(difference, 'day');
 
-    const date = new Date(createdAt);
-
-    const day = `0${date.getDate()}`.slice(-2);
-    const month = `0${date.getMonth() + 1}`.slice(-2);
-    const year = `${date.getFullYear()}`;
-
-    const rawDate = `${day}.${month}.${year}`;
-    return rawDate;
+    return getDateString(createdAt);
   }
 
   private _lessThan(
@@ -57,15 +51,15 @@ export class CreatedAtPipe implements PipeTransform {
 
   private _getCorrectUnitWord(value: number, unit: 'min' | 'hour' | 'day') {
     if (unit === 'min') {
-      if (value % 10 === 0 || value % 10 > 4) return 'минут';
+      if (value % 10 === 0 || value % 10 > 4 || value > 10 && value < 15) return 'минут';
       if (value % 10 === 1) return 'минуту';
       if (value % 10 < 5) return 'минуты';
     } else if (unit === 'hour') {
-      if (value % 10 === 0 || value % 10 > 4) return 'часов';
+      if (value % 10 === 0 || value % 10 > 4 || value > 10 && value < 15) return 'часов';
       if (value % 10 === 1) return 'час';
       if (value % 10 < 5) return 'часа';
     }
-    if (value % 10 === 0 || value % 10 > 4) return 'дней';
+    if (value % 10 === 0 || value % 10 > 4 || value > 10 && value < 15) return 'дней';
     if (value % 10 === 1) return 'день';
     if (value % 10 < 5) return 'дня';
     return '';

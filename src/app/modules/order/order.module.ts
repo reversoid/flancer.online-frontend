@@ -7,7 +7,6 @@ import { SingleOrderPageComponent } from './pages/single-order-page/single-order
 import { OrderComponent } from './components/order/order.component';
 import { TagComponent } from './components/tag/tag.component';
 import { PricePipe } from './utils/price.pipe';
-import { DatePipe } from './utils/date.pipe';
 import { CreatedAtPipe } from './utils/created-at.pipe';
 
 
@@ -18,7 +17,6 @@ import { CreatedAtPipe } from './utils/created-at.pipe';
     OrderComponent,
     TagComponent,
     PricePipe,
-    DatePipe,
     CreatedAtPipe,
   ],
   imports: [
