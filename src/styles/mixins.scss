@@ -1,0 +1,6 @@
+@import './colors.scss';
+
+@mixin yellow-box-shadow {
+  box-shadow: 0 0 5px $main-color;
+  transition: ease-in-out 0.2s;
+}

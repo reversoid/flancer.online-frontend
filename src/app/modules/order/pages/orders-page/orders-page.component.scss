@@ -1,5 +1,12 @@
+@import '/src/styles/colors';
+@import '/src/styles/mixins.scss';
+
 .order-link {
-    display: block;
-    color: inherit;
-    margin-bottom: 2.7rem;
+  display: inline-block;
+  color: inherit;
+  margin-bottom: 2.7rem;
+
+  &:focus ::ng-deep .order {
+    @include yellow-box-shadow();
+  }
 }

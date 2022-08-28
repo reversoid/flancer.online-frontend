@@ -1,8 +1,9 @@
 @import './colors.scss';
+@import './mixins.scss';
+
 .p {
   line-height: 1.2rem;
 }
-
 .fw-400 {
   font-weight: 400;
 }
@@ -70,8 +71,13 @@ body {
   text-align: center;
 
   &:focus {
-    box-shadow: 0 0 5px var(--main-color);
-    transition: ease-in-out 0.2s;
+    @include yellow-box-shadow();
+  }
+}
+
+.focus-yellow-box-shadow {
+  &:focus {
+    @include yellow-box-shadow();
   }
 }
 
