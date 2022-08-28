@@ -2,8 +2,8 @@ import { Component, Input } from '@angular/core';
 import { IOrder } from '../../pages/orders-page/orders-page.component';
 
 export interface INumericFromTo {
-  from: number;
-  to: number;
+  from: number | null;
+  to: number | null;
 }
 
 @Component({

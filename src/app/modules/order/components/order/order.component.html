@@ -11,11 +11,11 @@
   </div>
   <div class="order__info">
     <span class="order__price">
-      {{ order.price?.from }}
+      {{ order.price | price }}
     </span>
     <div class="order__created-at">
       <div class="order__created-at-img"></div>
-      <span>{{ order.createdAt }}</span>
+      <span>{{ order.createdAt | createdAt }}</span>
     </div>
   </div>
   <div class="order__tags">
