@@ -2,6 +2,4 @@
 
 This is my project for freelance market I build on my own.
 
-This is frontend repository.
-
-More info is coming..
+The purpose of this project is to learn best practices in angular(or any other framework) applications to be more qualified programmer.
