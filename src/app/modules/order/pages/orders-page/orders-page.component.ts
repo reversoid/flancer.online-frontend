@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { INumericFromTo } from '../../components/order/order.component';
 
 export interface IOrder {
+  id: string;
   title: string;
   description: string;
   date: INumericFromTo | null;
@@ -18,6 +19,7 @@ export interface IOrder {
 export class OrdersPageComponent {
   public orders: Array<IOrder> = [
     {
+      id: '123',
       title: 'Заголовок',
       description:
         'Описание.... ОписаниеОписание.... ОписаниеОписание.... ОписаниеОписание.... Описание',
