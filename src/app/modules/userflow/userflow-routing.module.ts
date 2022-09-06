@@ -15,6 +15,10 @@ const routes: Routes = [
         path: 'messages',
         loadChildren: () => import('src/app/modules/messages/messages.module').then((m) => m.MessagesModule),
       },
+      {
+        path: '**',
+        redirectTo: 'orders',
+      },
     ],
   },
 ];
