@@ -35,4 +35,9 @@ export class OrdersPageComponent {
       tags: ['веб-разработка', 'грузоперевозки'],
     },
   ];
+
+  testRender() {
+    console.log('rerender');
+    return '';
+  }
 }
