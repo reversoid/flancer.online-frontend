@@ -1,3 +1,5 @@
+@import '/src/styles/mixins.scss';
+
 .header {
   height: 60px;
   display: flex;
@@ -14,6 +16,9 @@
     align-items: center;
 
     .profile {
+      &:focus .profile__image{
+        @include yellow-box-shadow();
+      }
       border-radius: 1rem;
       padding: 0.25rem 0.5rem;
       color: white;
@@ -22,6 +27,7 @@
       align-items: center;
 
       .profile__image {
+        border-radius: 50%;
         height: 35px;
         width: 35px;
         margin-right: 0.625rem;
