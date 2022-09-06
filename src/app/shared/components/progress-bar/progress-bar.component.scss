@@ -1,0 +1,11 @@
+@import '/src/styles/colors';
+
+:host ::ng-deep .mat-progress-bar-buffer {
+    background-color: $dark;
+}
+
+.mat-progress-bar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}

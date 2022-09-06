@@ -10,6 +10,9 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { TogglerComponent } from './shared/components/toggler/toggler.component';
 import { HeaderRoleComponent } from './shared/components/header-role/header-role.component';
 import { store } from './shared/data/NgRx/store';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ProgressBarComponent } from './shared/components/progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -19,11 +22,14 @@ import { store } from './shared/data/NgRx/store';
     FooterComponent,
     TogglerComponent,
     HeaderRoleComponent,
+    ProgressBarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     StoreModule.forRoot(store),
+    MatProgressBarModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
