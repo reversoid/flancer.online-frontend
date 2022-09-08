@@ -1,0 +1,87 @@
+@import '/src/styles/shared.scss';
+
+.profile {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    gap: 2rem;
+    
+    .profile__img {
+        width: 10rem;
+        height: 10rem;
+    }
+    .profile__info {
+        width: 100%;
+        .name-with-rating {
+            display: flex;
+            margin-bottom: 1rem;
+            gap: 1rem;
+            .profile__name {
+                font-size: 1.5rem;
+            }
+        }
+        .profile__description {
+            font-size: 1rem;
+            line-height: 115%;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    .rating__img {
+        background-image: url('/assets/profile/star.svg');
+        width: 1.25rem;
+        height: 1.25rem;
+        background-size: contain;
+        background-position: center;
+        display: inline-block;
+    }
+    .rating__value {
+        display: inline-block;
+        font-size: 1.25rem;
+    }
+}
+
+.profile__stats {
+    display: flex;
+    gap: 1rem;
+
+    .stat {
+        cursor: pointer;
+        display: flex;
+        gap: 0.4rem;
+        .stat__img {
+            width: 1.25rem;
+            height: 1.25rem;
+            background-size: contain;
+            background-position: center;
+    
+            &.check-img {
+                background-image: url('/assets/profile/check.svg');
+            }
+            &.feedback-img {
+                background-image: url('/assets/profile/feedback.svg');
+            }
+        }
+        .stat__value {
+            font-size: 1.25rem;
+        }
+    }
+}
+.connect-btn-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    .connect-btn {
+        border-radius: 0.5rem;
+        padding: 0.75rem 1rem;
+        font-weight: 500;
+        color: $dark;
+        background-color: $main-color;
+    }
+}
+

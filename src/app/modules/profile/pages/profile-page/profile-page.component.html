@@ -1,1 +1,32 @@
-<p>profile-page works!</p>
+<section class="profile container">
+    <img src="/assets/header/profile.svg" class="profile__img"/>
+    <div class="profile__info">
+        <div class="name-with-rating">
+            <h1 class="profile__name fw-600">Георгий Кобунов</h1>
+            <div class="rating">
+                <div class="rating__img"></div>
+                <span class="rating__value color-main fw-500">4.7</span>
+            </div>
+        </div>
+        <p class="profile__description">
+            Привет! Я занимаюсь веб-разработкой!<br>
+            Я умею писать сайты на Angular, React.<br>
+            Также могу реализовать полноценное клиент-серверное REST приложение,<br>
+            используя Nest.js и вышеперечисленные фреймворки.
+        </p>
+        <div class="profile__stats">
+            <div class="stat">
+                <div class="stat__img check-img"></div>
+                <p class="stat__value">10</p>
+            </div>
+            <div class="stat">
+                <!-- TODO can we make its icon bolder like it is in check-icon?-->
+                <div class="stat__img feedback-img"></div>
+                <p class="stat__value">5</p>
+            </div>
+        </div>
+        <div class="connect-btn-container">
+            <button class="connect-btn focus-yellow-box-shadow">связаться</button>
+        </div>
+    </div>
+</section>
