@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./progress-bar.component.scss'],
 })
 export class ProgressBarComponent implements OnInit {
-  public isLoading = true;
+  public isLoading = false;
 
   ngOnInit(): void {
     setTimeout(() => {

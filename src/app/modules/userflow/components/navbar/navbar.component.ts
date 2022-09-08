@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { Subject, takeUntil } from 'rxjs';
 
@@ -15,20 +15,28 @@ enum TabStyle {
 export class NavbarComponent implements OnInit, OnDestroy {
   private unsubscribe = new Subject();
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private changeDetector: ChangeDetectorRef) {}
 
   public buttonStyles = {
     orders: '',
     messages: '',
   };
 
-  private _setButtonStyles(currentPath: string) {
+  public messagesButtonStyles = '';
+
+  private _setButtonStyles(currentPath: string) {    
     if (currentPath === '/orders') {
-      this.buttonStyles.orders = TabStyle.ACTIVE;
-      this.buttonStyles.messages = TabStyle.INACTIVE;
+      this.buttonStyles = {
+        messages: TabStyle.INACTIVE,
+        orders: TabStyle.ACTIVE,
+      };
+      
     } else if (currentPath === '/messages') {
-      this.buttonStyles.messages = TabStyle.ACTIVE;
-      this.buttonStyles.orders = TabStyle.INACTIVE;
+      this.buttonStyles = {
+        messages: TabStyle.ACTIVE,
+        orders: TabStyle.INACTIVE,
+      };
+      this.changeDetector.markForCheck();
     }
   }
 
