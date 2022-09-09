@@ -1,0 +1,52 @@
+@import "/src/styles/shared.scss";
+
+.message {
+  display: flex;
+  gap: 1rem;
+  height: 5rem;
+  background-color: $lightgray;
+  border-radius: 1rem;
+  padding: 1rem;
+  justify-content: space-between;
+  cursor: pointer;
+
+  .body {
+    display: flex;
+    gap: 1rem;
+    .message__img {
+      height: 3.3125rem;
+      width: 3.3125rem;
+      background-color: red;
+      border-radius: 50%;
+    }
+    .message__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      .message__header {
+        font-weight: 500;
+        font-size: 1.125rem;
+      }
+    }
+  }
+  .message__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .message__date {
+        font-weight: 500;
+    }
+    .message__counter {
+        color: $dark;
+        background-color: $light;
+        border-radius: 50%;
+        padding: 0.25rem;
+        min-width: 1.5rem;
+        height: 1.5rem;
+        text-align: center;
+        font-size: 0.9375rem;
+        font-weight: 500;
+    }
+}
+}
