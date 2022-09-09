@@ -75,13 +75,22 @@
 .connect-btn-container {
     display: flex;
     justify-content: flex-start;
-    margin-top: 2rem;
+    align-items: center;
+    gap: 1.5rem;
+    flex-direction: column;
+
     .connect-btn {
         border-radius: 0.5rem;
         padding: 0.75rem 1rem;
         font-weight: 500;
         color: $dark;
-        background-color: $main-color;
+        background-color: $light;
     }
+}
+.skills {
+    display: flex;
+    gap: 0.5rem;
+    cursor: default;
+    margin-bottom: 1rem;
 }
 

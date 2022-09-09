@@ -9,24 +9,35 @@
             </div>
         </div>
         <p class="profile__description">
-            Привет! Я занимаюсь веб-разработкой!<br>
-            Я умею писать сайты на Angular, React.<br>
-            Также могу реализовать полноценное клиент-серверное REST приложение,<br>
+            Привет! Я занимаюсь веб-разработкой!
+            Я умею писать сайты на Angular, React.
+            Также могу реализовать полноценное клиент-серверное REST приложение,
             используя Nest.js и вышеперечисленные фреймворки.
         </p>
+        
+        <div class="skills">
+            <app-tag text="верстка"></app-tag>
+            <app-tag text="фронтенд"></app-tag>
+            <app-tag text="разработка"></app-tag>
+            <app-tag text="бэкенд"></app-tag>
+            <app-tag text="менторинг"></app-tag>
+        </div>
+    </div>
+    <div class="connect-btn-container">
+        <button class="connect-btn focus-yellow-box-shadow">связаться</button>
         <div class="profile__stats">
-            <div class="stat">
+            <!-- MAKE MATERIAL TOOLTIP INSTEAD OF TITLE-->
+            <div class="stat" title="Выполнено заказов">
                 <div class="stat__img check-img"></div>
                 <p class="stat__value">10</p>
             </div>
+
+            <!-- MAKE MATERIAL TOOLTIP INSTEAD OF TITLE-->
             <div class="stat">
                 <!-- TODO can we make its icon bolder like it is in check-icon?-->
-                <div class="stat__img feedback-img"></div>
+                <div class="stat__img feedback-img" title="Количество отзывов"></div>
                 <p class="stat__value">5</p>
             </div>
-        </div>
-        <div class="connect-btn-container">
-            <button class="connect-btn focus-yellow-box-shadow">связаться</button>
         </div>
     </div>
 </section>
