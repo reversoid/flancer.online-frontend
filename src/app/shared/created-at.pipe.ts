@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { getDateString } from './getDateString';
+import { getDateString } from '../modules/order/utils/getDateString';
 
 @Pipe({
   name: 'createdAt',

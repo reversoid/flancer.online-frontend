@@ -1,0 +1,15 @@
+<div class="message">
+  <div class="body">
+    <img src="" alt="" class="message__img" />
+    <div class="message__content">
+      <h3 class="message__header">{{dialog.senderName}}</h3>
+      <p class="message__text">
+        {{dialog.lastMessage}}
+      </p>
+    </div>
+  </div>
+  <div class="message__info">
+    <p class="message__date">{{ dialog.lastMessageDate | createdAt }}</p>
+    <div class="message__counter">{{ dialog.newMessagesCount }}</div>
+  </div>
+</div>
