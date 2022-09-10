@@ -39,7 +39,7 @@ export class OrdersPageComponent {
       title: 'Другой заголовок',
       description:
         'lorem impspsps sajdj sjj j asjajej sjaj ajsjeej sjalek skkka;',
-      createdAt: 1661695911380,
+      createdAt: Date.now(),
       date: {
         from: Math.floor(Date.now() / 1000),
         to:  Math.floor(Date.now() / 1000 + 60 * 60 * 24 * 5),
