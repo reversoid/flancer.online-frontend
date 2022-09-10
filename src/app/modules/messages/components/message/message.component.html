@@ -1,4 +1,4 @@
-<div class="message">
+<div class="message" [ngClass]="{'unread': dialog.newMessagesCount}">
   <div class="body">
     <img src="" alt="" class="message__img" />
     <div class="message__content">
@@ -10,6 +10,6 @@
   </div>
   <div class="message__info">
     <p class="message__date">{{ dialog.lastMessageDate }}</p>
-    <div class="message__counter">{{ dialog.newMessagesCount }}</div>
+    <div *ngIf="dialog.newMessagesCount" class="message__counter">{{ dialog.newMessagesCount }}</div>
   </div>
 </div>

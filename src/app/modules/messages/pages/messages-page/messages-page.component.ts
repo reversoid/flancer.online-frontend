@@ -21,7 +21,7 @@ export class MessagesPageComponent {
       senderId: '5553535',
       lastMessage: 'Добрый день! что насчет оплаты?',
       lastMessageDate: Date.now(),
-      newMessagesCount: 9,
+      newMessagesCount: 0,
       senderName: 'Никита Вальерный',
     },
   ];

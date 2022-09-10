@@ -4,11 +4,14 @@
   display: flex;
   gap: 1rem;
   height: 5rem;
-  background-color: $lightgray;
+  background-color: $darkgray;
   border-radius: 1rem;
   padding: 1rem;
   justify-content: space-between;
   cursor: pointer;
+  &.unread {
+    background-color: $lightgray;
+  }
 
   .body {
     display: flex;
