@@ -34,10 +34,21 @@ export class OrdersPageComponent {
       },
       tags: ['веб-разработка', 'грузоперевозки'],
     },
+    {
+      id: '345',
+      title: 'Другой заголовок',
+      description:
+        'lorem impspsps sajdj sjj j asjajej sjaj ajsjeej sjalek skkka;',
+      createdAt: 1661695911380,
+      date: {
+        from: Math.floor(Date.now() / 1000),
+        to:  Math.floor(Date.now() / 1000 + 60 * 60 * 24 * 5),
+      },
+      price: {
+        from: 100,
+        to: 500,
+      },
+      tags: ['веб-разработка'],
+    },
   ];
-
-  testRender() {
-    console.log('rerender');
-    return '';
-  }
 }

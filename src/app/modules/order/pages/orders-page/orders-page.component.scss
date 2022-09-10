@@ -1,10 +1,13 @@
 @import '/src/styles/colors';
 @import '/src/styles/mixins.scss';
 
+.container {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
 .order-link {
   display: inline-block;
-  color: inherit;
-  margin-bottom: 2.7rem;
   width: 100%;
 
   &:focus ::ng-deep .order {

@@ -17,5 +17,12 @@ export class MessagesPageComponent {
       newMessagesCount: 8,
       senderName: 'Олег Майями',
     },
+    {
+      senderId: '5553535',
+      lastMessage: 'Добрый день! что насчет оплаты?',
+      lastMessageDate: Date.now(),
+      newMessagesCount: 9,
+      senderName: 'Никита Вальерный',
+    },
   ];
 }
