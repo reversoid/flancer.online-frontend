@@ -9,7 +9,7 @@
     </div>
   </div>
   <div class="message__info">
-    <p class="message__date">{{ dialog.lastMessageDate }}</p>
+    <p class="message__date">{{ dialog.lastMessageDate | lastMessageDate }}</p>
     <div *ngIf="dialog.newMessagesCount" class="message__counter">{{ dialog.newMessagesCount }}</div>
   </div>
 </div>

@@ -6,6 +6,7 @@ import { MessagesPageComponent } from './pages/messages-page/messages-page.compo
 import { SingleDialogPageComponent } from './pages/single-dialog-page/single-dialog-page.component';
 import { MessageComponent } from './components/message/message.component';
 import { SharedComponentsModule } from 'src/app/shared/shared-components.module';
+import { LastMessageDatePipe } from './utils/last-message-date.pipe';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { SharedComponentsModule } from 'src/app/shared/shared-components.module'
     MessagesPageComponent,
     SingleDialogPageComponent,
     MessageComponent,
+    LastMessageDatePipe,
   ],
   imports: [
     CommonModule,
