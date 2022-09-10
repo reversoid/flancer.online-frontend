@@ -7,6 +7,7 @@ import { SingleOrderPageComponent } from './pages/single-order-page/single-order
 import { OrderComponent } from './components/order/order.component';
 import { PricePipe } from './utils/price.pipe';
 import { SharedComponentsModule } from 'src/app/shared/shared-components.module';
+import { CreatedAtPipe } from './utils/created-at.pipe';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { SharedComponentsModule } from 'src/app/shared/shared-components.module'
     SingleOrderPageComponent,
     OrderComponent,
     PricePipe,
+    CreatedAtPipe,
   ],
   imports: [
     CommonModule,
