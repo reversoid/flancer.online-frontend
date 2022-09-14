@@ -1,0 +1,61 @@
+@import "/src/styles/colors";
+
+@mixin order {
+  background-color: $lightgray;
+  padding: 1.6rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin order-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+@mixin order-description {
+  font-weight: 500;
+}
+
+@mixin order-date {
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  display: flex;
+  cursor: inherit;
+}
+
+@mixin order-dateImg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.625rem;
+}
+
+@mixin order-info {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@mixin order-createdAt {
+  font-size: 1rem;
+  display: flex;
+  font-weight: 500;
+}
+
+@mixin order-createdAtImg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.625rem;
+}
+
+@mixin order-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+}

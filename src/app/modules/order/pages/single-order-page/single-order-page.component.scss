@@ -1,2 +1,53 @@
-@import '/src/styles/colors';
-@import '/src/styles/mixins.scss';
+@import "/src/styles/colors";
+@import "/src/styles/mixins.scss";
+@import "../../utils/mixins.scss";
+
+.container {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.order {
+  @include order;
+  flex-grow: 1;
+  border-radius: 1rem;
+  padding: 1.6rem 2.5rem;
+
+  .order__title {
+    @include order-title;
+  }
+  .order__description {
+    @include order-description;
+  }
+  .order__date {
+    @include order-date;
+
+    .order__date-img {
+      background-image: url("../../assets/calendar.svg");
+      @include order-dateImg;
+    }
+  }
+  .order__info {
+    @include order-info;
+
+    .order__created-at {
+      @include order-createdAt;
+
+      .order__created-at-img {
+        background-image: url("../../assets/time.svg");
+        @include order-createdAtImg;
+      }
+    }
+
+    .order__price {
+      @include order-price;
+    }
+  }
+}
+.aside {
+  width: 16rem;
+  background-color: $light;
+  color: $dark;
+  border-radius: 1rem;
+  padding: 1.6rem 2.5rem;
+}
