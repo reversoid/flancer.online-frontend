@@ -1,5 +1,5 @@
 <div class="container">
-    <a class="order-link" [routerLink]="order.id" *ngFor="let order of orders">
+    <a class="order-link" [routerLink]="order.id" *ngFor="let order of orders" [state]="{order}">
         <app-order [order]="order"></app-order>
     </a>
 </div>

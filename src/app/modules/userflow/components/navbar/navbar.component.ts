@@ -25,8 +25,6 @@ export class NavbarComponent implements OnInit, OnDestroy {
   public messagesButtonStyles = '';
 
   private _setButtonStyles(currentPath: string) {    
-    console.log(currentPath);
-    
     if (currentPath.match(/\/orders/)) {
       this.buttonStyles = {
         messages: TabStyle.INACTIVE,

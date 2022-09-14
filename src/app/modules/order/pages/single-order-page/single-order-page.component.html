@@ -1,24 +1,25 @@
-<section class="container">
-    <div class="order">
-        <div class="order__data">
-            <h3 class="order__title">MY TITLE</h3>
-            <p class="order__description">
-              DESCRiption n n n n n  n n n
-            </p>
-            <label class="order__date">
-              <div class="order__date-img"></div>
-              <span>17.04.2002</span>
-            </label>
-          </div>
-          <div class="order__info">
-            <span class="order__price">
-              555 - 555
-            </span>
-            <div class="order__created-at">
-              <div class="order__created-at-img"></div>
-              <span>сейчас</span>
-            </div>
-          </div> 
+<section class="container" *ngIf="order">
+  <div class="order">
+    <div class="order__data">
+      <h3 class="order__title">{{ order.title }}</h3>
+      <p class="order__description">
+        {{ order.description }}
+      </p>
+      <label class="order__date">
+        <div class="order__date-img"></div>
+        <span>{{ order.date }}</span>
+      </label>
     </div>
-    <aside class="aside">aside</aside>
+    <div class="order__info">
+      <span class="order__price">
+        {{ order.price | price }}
+      </span>
+      <div class="order__created-at">
+        <div class="order__created-at-img"></div>
+        <span>{{ order.createdAt | createdAt }}</span>
+      </div>
+    </div>
+  </div>
+
+  <aside class="aside">aside</aside>
 </section>

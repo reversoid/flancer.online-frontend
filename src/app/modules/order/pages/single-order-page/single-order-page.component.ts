@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IOrder } from '../orders-page/orders-page.component';
 
 @Component({
   selector: 'app-single-order-page',
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./single-order-page.component.scss'],
 })
 export class SingleOrderPageComponent implements OnInit {
+  public order?: IOrder;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit() {
+    // TODO IF WINDOW.HISTORY.STATE.ORDER ? THEN ASSIGN; ELSE MAKE API CALL
+    this.order = window.history.state.order;
   }
-
 }
