@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IDialog } from '../../utils/types';
+import { Dialog } from '../../utils/types';
 
 @Component({
   selector: 'app-messages-page',
@@ -7,7 +7,7 @@ import { IDialog } from '../../utils/types';
   styleUrls: ['./messages-page.component.scss'],
 })
 export class MessagesPageComponent {
-  public dialogs: IDialog[] = [
+  public dialogs: Dialog[] = [
     {
       senderId: '5553535',
       lastMessage: `Здравствуйте! Нужен вебсайт по разработке ffffffffffffff ffffffffffff

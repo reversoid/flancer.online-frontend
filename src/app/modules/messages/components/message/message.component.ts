@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IDialog } from '../../utils/types';
+import { Dialog } from '../../utils/types';
 
 @Component({
   selector: 'app-message',
@@ -7,5 +7,5 @@ import { IDialog } from '../../utils/types';
   styleUrls: ['./message.component.scss'],
 })
 export class MessageComponent {
-  @Input() dialog!: IDialog;
+  @Input() dialog!: Dialog;
 }

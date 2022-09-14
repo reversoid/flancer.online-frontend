@@ -1,11 +1,11 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { INumericFromTo } from '../components/order/order.component';
+import { NumericFromTo } from '../components/order/order.component';
 
 @Pipe({
   name: 'price',
 })
 export class PricePipe implements PipeTransform {
-  transform(price: INumericFromTo | null): string {
+  transform(price: NumericFromTo | null): string {
     if (price === null) {
       return '';
     }

@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
-import { IOrder } from '../../pages/orders-page/orders-page.component';
+import { Order } from '../../pages/orders-page/orders-page.component';
 
-export interface INumericFromTo {
+export interface NumericFromTo {
   from: number | null;
   to: number | null;
 }
@@ -12,5 +12,5 @@ export interface INumericFromTo {
   styleUrls: ['./order.component.scss'],
 })
 export class OrderComponent {
-  @Input() order!: IOrder;
+  @Input() order!: Order;
 }

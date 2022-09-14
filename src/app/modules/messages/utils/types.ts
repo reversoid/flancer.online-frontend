@@ -1,4 +1,4 @@
-export interface IDialog {
+export interface Dialog {
   senderId: string;
   senderName: string;
   lastMessage: string;

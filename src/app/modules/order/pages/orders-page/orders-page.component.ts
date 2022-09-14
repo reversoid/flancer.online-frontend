@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { INumericFromTo } from '../../components/order/order.component';
+import { NumericFromTo } from '../../components/order/order.component';
 
-export interface IOrder {
+export interface Order {
   id: string;
   title: string;
   description: string;
-  date: INumericFromTo | null;
-  price: INumericFromTo | null;
+  date: NumericFromTo | null;
+  price: NumericFromTo | null;
   createdAt: number;
   tags: Array<string>;
 }
@@ -17,7 +17,7 @@ export interface IOrder {
   styleUrls: ['./orders-page.component.scss'],
 })
 export class OrdersPageComponent {
-  public orders: Array<IOrder> = [
+  public orders: Array<Order> = [
     {
       id: '123',
       title: 'Заголовок',
