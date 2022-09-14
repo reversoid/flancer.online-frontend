@@ -25,13 +25,15 @@ export class NavbarComponent implements OnInit, OnDestroy {
   public messagesButtonStyles = '';
 
   private _setButtonStyles(currentPath: string) {    
-    if (currentPath === '/orders') {
+    console.log(currentPath);
+    
+    if (currentPath.match(/\/orders/)) {
       this.buttonStyles = {
         messages: TabStyle.INACTIVE,
         orders: TabStyle.ACTIVE,
       };
       
-    } else if (currentPath === '/messages') {
+    } else if (currentPath.match(/\/messages/)) {
       this.buttonStyles = {
         messages: TabStyle.ACTIVE,
         orders: TabStyle.INACTIVE,
