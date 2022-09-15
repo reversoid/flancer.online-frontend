@@ -1,0 +1,41 @@
+@import "/src/styles/shared.scss";
+.messenger {
+    display: flex;
+    flex-direction: column;
+
+    .messenger__header {
+        background-color: #fff;
+        color: black;
+    }
+
+    .messenger__body {
+        display: flex;
+        flex-direction: column;
+
+        .messages {
+            height: 64vh;
+            background-color: rgb(146, 146, 146);
+            overflow-y: auto;
+            .test-content {
+                height: 60rem;
+            }
+        }
+        .controls {
+            height: 3rem;
+            background-color: rgb(46, 46, 46);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0 0.5rem;
+            input {
+                height: 100%;
+                flex-grow: 1;
+            }
+            .controls__icon {
+                width: 2rem;
+                height: 2rem;
+                background-color: red;
+            }
+        }
+    }
+}
